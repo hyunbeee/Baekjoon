@@ -1,4 +1,7 @@
-a = int(input())
+import sys
+input = sys.stdin.readline
 
-for i in range(1, a + 1):
-    print((" " * (a - i) + "*" * i).rstrip())
+n = int(input())
+
+for i in range(1,n+1):					
+    print(" "*(n-i)+"*"*i)
